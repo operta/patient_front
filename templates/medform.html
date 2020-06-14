@@ -1,0 +1,48 @@
+<html>
+   <body>
+      <form action = "http://localhost:5000/result" method = "POST">
+         <p>Name <input type = "text" name = "name" /></p>
+         <p>Last Name<input type = "text" name = "last_name" /></p>
+         <p>Email<input type = "text" name = "patient_email" /></p>
+         <p>Cough
+         	<input type = "radio" id="yes" name = "hasCough" value = "true" />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasCough" value = "false"/>
+         	<label for="no">No</label><br> </p>
+         <p>Fever
+         	<input type = "radio" id="yes" name = "hasFever " value = "true"  />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasFever " value = "false"/>
+         	<label for="no">No</label><br> </p>
+         <p>Fever Temperature (Celsius) <input type = "number" name = "temperature" /></p>
+         <p>Sore Throat
+         	<input type = "radio" id="yes" name = "hasSoreThroat" value = "true"  />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasSoreThroat" value = "false"/>
+         	<label for="no">No</label><br> </p>
+         <p>Muscle Pain
+         	<input type = "radio" id="yes" name = "hasMusclePain" value = "true"  />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasMusclePain" value = "false" />
+         	<label for="no">No</label><br> </p>
+         <p>Shortness of Breath 
+         	<input type = "radio" id="yes" name = "hasShortnessOfBreath" value = "true"  />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasShortnessOfBreath" value = "false"/>
+         	<label for="no">No</label><br> </p>
+         <p>Loss of Taste or Smell 
+         	<input type = "radio" id="yes" name = "hasLossOfTasteOrSmell" value = "true"  />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasLossOfTasteOrSmell" value = "false"/>
+         	<label for="no">No</label><br> </p>
+         <p>Contact with Corona Infected Patient 
+         	<input type = "radio" id="yes" name = "hasContactWithCoronaCase" value = "true"  />
+         	<label for="yes">Yes</label>
+         	<input type = "radio" id="no" name = "hasContactWithCoronaCase" value = "false"/>
+         	<label for="no">No</label><br> </p>
+         <p>Comment <input type = "text" name = "patient_comment" /></p>
+         <p><input type = "Submit" value = "Submit" /></p>
+      </form>
+   </body>
+</html>
+
