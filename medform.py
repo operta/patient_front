@@ -5,6 +5,7 @@
 """
 from flask import Flask, render_template, request
 import json
+import requests
 
 app = Flask(__name__)
 
@@ -16,8 +17,12 @@ def student():
 def result():
    if request.method == 'POST':
       result = request.form
+
       with open('file.json', 'w') as f:
         json.dump(request.form, f)
+
+      response = requests.post('http://localhost:4000/', json=json.dumps(result))
+
       return render_template("result.html",result = result)
 
 if __name__ == '__main__':
