@@ -23,7 +23,7 @@ def result():
 
       response = requests.post('http://localhost:4000/', json=json.dumps(result))
 
-      return render_template("result.html",result = result)
+      return render_template("result.html",result = result, message=response.content)
 
 if __name__ == '__main__':
    app.run(debug = True)
