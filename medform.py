@@ -21,7 +21,7 @@ def result():
       with open('file.json', 'w') as f:
         json.dump(request.form, f)
 
-      response = requests.post('http://localhost:4000/', json=json.dumps(result))
+      response = requests.post('http://3.126.117.204:4000/', json=json.dumps(result))
 
       return render_template("result.html",result = result, message=response.content)
 
